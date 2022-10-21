@@ -2,13 +2,17 @@
 
 ### ---------------- Download and Install --------------
 
-Download Selenium Grid 4: https://www.selenium.dev/downloads/
+1. Download Selenium Grid 4: https://www.selenium.dev/downloads/
 
 (tải bản Latest stable version)
 
-selenium-server-4.5.2.jar (updated 22/10/2022)
+**selenium-server-4.5.2.jar** (updated 22/10/2022)
 
-Đặt file selenium-server-4.5.2.jar vào thư mục nào đó và mở CMD tại thư mục đó lên
+2. Thiết đặt PATH cho driver của từng Browser:
+
+Xem link làm theo: https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/#2-the-path-environment-variable
+
+Đặt file **selenium-server-4.5.2.jar** vào thư mục nào đó và mở CMD tại thư mục đó lên
 
 ### ---------------------- Run default -------------------
 
