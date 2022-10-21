@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests" >
+    <test name="FirstTest" parallel="methods" thread-count="8">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FirstTest">
+                <methods>
+                    <include name="ANHTESTER1" />
+                    <include name="ANHTESTER2" />
+                    <include name="ANHTESTER3" />
+                    <include name="ANHTESTER4" />
+                    <include name="ANHTESTER5" />
+                    <include name="ANHTESTER6" />
+                    <include name="ANHTESTER7" />
+                    <include name="ANHTESTER8" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SecondTest"  parallel="methods" thread-count="2">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="SecondTest">
+                <methods>
+                    <include name="GOOGLE" />
+                    <include name="AnhTesterBlog" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ThreeTest"  parallel="methods" thread-count="4">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="ThreeTest">
+                <methods>
+                    <include name="SeleniumDev1" />
+                    <include name="SeleniumDev2" />
+                    <include name="SeleniumDev3" />
+                    <include name="SeleniumDev4" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
